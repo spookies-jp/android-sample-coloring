@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">塗り絵</string>
+    <string name="message_saved">保存しました</string>
+    <string name="confirm_clear_title">クリア確認</string>
+    <string name="confirm_clear_msg">作成した塗り絵をクリアしますか？</string>
+    <string name="btn_ok">はい</string>
+    <string name="btn_cancel">いいえ</string>
+</resources>

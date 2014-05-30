@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/bg"
+		>
+		<ImageView android:id="@+id/title" 
+						android:layout_height="wrap_content" 
+						android:layout_width="wrap_content" 
+						android:src="@drawable/title">
+		</ImageView>
+		<FrameLayout android:layout_weight="1" android:layout_height="0dip" android:id="@+id/frameLayoutCanvas" 
+			android:layout_width="fill_parent"  android:background="@android:color/white">
+			<ImageView android:id="@+id/backPictureView" android:src="@drawable/back"
+				android:layout_height="wrap_content" android:layout_width="wrap_content" android:scaleType="centerCrop">
+			</ImageView>
+			<jp.co.spookies.android.coloring.MyCanvasView android:id="@+id/myCanvasView" android:layout_height="fill_parent" android:layout_width="fill_parent">
+			</jp.co.spookies.android.coloring.MyCanvasView>
+		</FrameLayout>
+		<LinearLayout android:layout_height="wrap_content" android:layout_marginTop="13dip" android:layout_width="wrap_content" 
+																	android:id="@+id/linearLayoutPalette" android:gravity="bottom">
+			<jp.co.spookies.android.coloring.PaletteView android:layout_height="50dip" android:id="@+id/paletteView" 
+															android:layout_width="fill_parent">
+			</jp.co.spookies.android.coloring.PaletteView>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content" android:layout_marginTop="13dip" android:layout_width="wrap_content" 
+																	android:id="@+id/linearLayoutBottom" android:gravity="bottom">
+			<jp.co.spookies.android.coloring.BrushView android:id="@+id/brushView" android:layout_height="wrap_content" 
+					android:layout_width="wrap_content">
+			</jp.co.spookies.android.coloring.BrushView>
+			<Button android:layout_height="wrap_content" android:layout_weight="1"
+						android:background="@drawable/save_button" android:onClick="onClickSaveButton" 
+						android:layout_width="0dip" android:id="@+id/button1"></Button>
+			<Button android:layout_height="wrap_content" android:layout_weight="1"
+						android:background="@drawable/undo_button" android:onClick="onClickUndoButton" 
+						android:layout_width="0dip" android:id="@+id/button2"></Button>
+			<Button android:layout_height="wrap_content" android:layout_weight="1"
+						android:background="@drawable/clear_button" android:onClick="onClickClearButton" 
+						android:layout_width="0dip" android:id="@+id/button3"></Button>
+		</LinearLayout>
+	</LinearLayout>
